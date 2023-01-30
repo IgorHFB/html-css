@@ -1,38 +1,45 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive';
+    --fonte3: 'Sriracha', 'cursive';
+}
+
 * {
-    font-family: Verdana, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgrey;
+    font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
-    height: 200px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.253), rgb(212, 145, 0) 90%);
+    text-align: center; 
     padding: 10px;
 }
 
 header > h1 {
-    font-family: 'Passion One', 'cursive';
-    font-size: 6vw;
     color: white;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 30px;
-}
-
-header > h1::first-letter {
-    font-size: 1.5em;
+    font-family: var(--fonte2);
+    font-size: 7vw;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    padding-top: 50px;
 }
 
 header > p {
     color: white;
-    text-align: center;
-    margin-top: -25px;
+    padding-bottom: 50px;
 }
 
 header a {
@@ -45,35 +52,63 @@ header a:hover {
     text-decoration: underline;
 }
 
-article > p {
-    font-family: 'Sriracha', 'cursive';
+section {
+    font-family: var(--fonte3);
+    padding-left: 30px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     font-size: 3.5vw;
     line-height: 2em;
-    padding: 30px;
-    margin: 100px 0;
 }
 
-.parallax1 {
-    background-image: url('../imagens/background001.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    color: white;
-    padding: 100px 30px;
+section > p {
+    padding-bottom: 10vh;
 }
 
-.parallax2 {
-    background-image: url('../imagens/background002.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+section.padrao {
+    background-color: white;
     color: black;
-    padding: 100px 30px;
+}
+
+section.parallax {
+    background-color: darkgrey;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 10vh 1em;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.4);
+}
+
+section.parallax > p {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(212, 145, 0);
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
