@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus optio perspiciatis ex delectus ullam molestias veritatis blanditiis alias! Nostrum quasi repellendus voluptas, aliquid soluta odit quis exercitationem totam eos officiis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod vitae dolor ratione accusantium, dicta earum et amet sunt dignissimos delectus animi, explicabo assumenda libero corrupti modi fugiat excepturi quidem quam labore sed. Saepe, error! Eum quo autem perferendis dolores dolorum eveniet quod ad fuga officiis odit, placeat, cupiditate voluptates architecto nesciunt in ab dolorem voluptate perspiciatis tempora magni optio nam recusandae deserunt tenetur. Ea odio, necessitatibus natus voluptatibus eos sit eveniet quasi, quae ut autem recusandae voluptates modi perspiciatis repellat hic delectus illum atque facilis! Corporis iusto alias error autem corrupti cupiditate adipisci. Magni quibusdam ea possimus numquam expedita.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores quod ad voluptatum ipsa officia quisquam sapiente excepturi ratione nostrum dignissimos a eaque amet esse dolor mollitia in aperiam, earum ab nobis neque. In quaerat earum magni cum quos distinctio aliquam, dolores, et aperiam laudantium, laboriosam nam aut quod hic sequi quidem. Quis magni, pariatur aliquid corrupti, sed perferendis impedit odio cum, optio incidunt expedita dicta illo eaque numquam soluta quia in! Natus, nam et, laborum doloremque aspernatur ducimus, ullam veritatis eos animi quos quo. Debitis voluptatibus provident sint labore, cum fuga illum eligendi eos, quos deleniti obcaecati assumenda? Sit modi deleniti ratione qui at saepe explicabo quam ipsum maiores error sapiente, molestias neque alias tenetur excepturi adipisci voluptatibus reprehenderit, amet iusto dolore distinctio. Pariatur?</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } 
+            else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
